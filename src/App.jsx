@@ -24,9 +24,3 @@ function App() {
 }
 
 export default App;
-
-// https://dunks1980.com/
-//https://codepen.io/amit_sheen/pen/LYNKerG
-//https://codepen.io/joyanna/pen/NWGYLNW
-//https://redstapler.co/create-border-length-animation-with-pure-css/
-//https://www.youtube.com/watch?v=4ZxzqiAh3WA&ab_channel=RedStapler

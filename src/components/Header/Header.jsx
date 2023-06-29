@@ -14,13 +14,13 @@ const Header = () => {
         <NavLink to="/">
           <AiOutlineHome className="nav-icon" />
         </NavLink>
-        <NavLink to="/">
+        <NavLink to="www.github.com">
           <FaGithub className="nav-icon" />
         </NavLink>
-        <NavLink to="">
+        <NavLink to="www.linkedin.com">
           <FaLinkedin className="nav-icon" />
         </NavLink>
-        <NavLink to="">
+        <NavLink to="www.whatsapp.com">
           <FaWhatsapp className="nav-icon" />
         </NavLink>
       </nav>
