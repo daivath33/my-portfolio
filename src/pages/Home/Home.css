@@ -1,0 +1,81 @@
+.main-container-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10rem;
+}
+
+.main-container-inner .left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-left: 5rem;
+}
+.main-container-inner .left h1 {
+  text-transform: capitalize;
+  font-size: 86px;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 28rem;
+  animation: type 3s steps(40, end) forwards;
+}
+.main-container-inner .left h2 {
+  text-transform: capitalize;
+  font-size: 64px;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 24rem;
+  animation: type 3s steps(40, end) forwards;
+}
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%,
+  99% {
+    border-right: 2px solid var(--grad-1);
+  }
+  100% {
+    border-right: none;
+  }
+}
+
+.left .about-text {
+  padding-left: 1rem;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.left .about-text p {
+  letter-spacing: 0.2px;
+}
+.main-container-inner .right a {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+.main-container-inner .right {
+  flex: 1;
+  position: relative;
+}
+
+@media screen and (max-width: 880px) {
+  .main-container-inner {
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+  .left {
+    padding-right: 6rem;
+  }
+  .right-links {
+    margin-top: 8rem;
+  }
+}

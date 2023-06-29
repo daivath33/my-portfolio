@@ -1,0 +1,36 @@
+header {
+  position: absolute;
+  width: 90%;
+  top: 1rem;
+  left: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  color: var(--color-gray);
+  font-size: 5em;
+  color: #f5f5f5;
+  text-shadow: white 0.006em 0.006em 1px, rgba(0, 0, 0, 0.15) -3px 7px 10px,
+    #d0d0d0 -1px 1px 1px, #d0d0d0 -2px 1px 1px, #d0d0d0 -3px 1px 1px,
+    #d0d0d0 -4px 1px 1px, #d0d0d0 -5px 1px 1px, #d0d0d0 -6px 1px 1px,
+    #d0d0d0 -7px 1px 1px, #d0d0d0 -8px 1px 1px, #d0d0d0 -9px 1px 1px,
+    #d0d0d0 -10px 1px 1px, #d0d0d0 -11px 1px 1px, #d0d0d0 -12px 1px 1px,
+    rgba(255, 255, 255, 0.6) -5px 2px 100px;
+  opacity: 0.5;
+  -moz-transform: rotateX(180deg) rotateY(-30deg);
+  -webkit-transform: rotateX(180deg) rotateY(-30deg);
+  transform: rotateX(180deg) rotateY(-30deg);
+  z-index: 999;
+}
+
+nav {
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+nav .nav-icon {
+  font-size: 28px;
+  fill: var(--color-gray);
+}

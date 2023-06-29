@@ -1,0 +1,28 @@
+.right-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 2px solid;
+  border-top: 2px solid;
+  width: 11rem;
+  height: 14rem;
+  border-top-right-radius: 20px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(var(--grad-1), var(--grad-2));
+  padding: 3rem;
+}
+.right-links a {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-image-source: linear-gradient(to left, var(--grad-1), var(--grad-2));
+}

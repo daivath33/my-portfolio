@@ -1,0 +1,79 @@
+:root {
+  --bg-color: #1d1d20;
+  --text-color: #d1d1d1;
+  --color-gray: #777;
+  --color-gray-300: #aaa6a6;
+  --color-gray-800: #36363b;
+  --grad-1: rgb(111, 96, 174);
+  --grad-2: rgb(123, 183, 103);
+}
+
+*,
+*::after,
+*::before {
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-color);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  line-height: 1.15;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  margin: 0 auto;
+  position: relative;
+  max-width: 1280px;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+.main-container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14rem;
+  height: 14rem;
+  clip-path: polygon(100% 0, 0% 100%, 0 0);
+  z-index: -999;
+}
+.main-container:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 14rem;
+  height: 14rem;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  z-index: -999;
+}
+.main-container:after {
+  border-top: 10px solid;
+  border-left: 10px solid;
+  border-top-left-radius: 20px;
+
+  border-image-slice: 1;
+  border-width: 20px;
+  border-image-source: linear-gradient(to left, var(--grad-1), var(--grad-2));
+}
+.main-container:before {
+  border-bottom: 10px solid;
+  border-right: 10px solid;
+  border-image-slice: 1;
+  border-width: 20px;
+  border-image-source: linear-gradient(to left, var(--grad-1), var(--grad-2));
+}
+@media screen and (min-width: 500px) {
+}
+
+@media screen and (min-width: 900px) {
+}
